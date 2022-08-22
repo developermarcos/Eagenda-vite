@@ -224,4 +224,4 @@ const params = new URLSearchParams(window.location.search);
 
 let id = params.get("id") as string;
 
-const tarefaCadastro = new TelaCadastroTarefa(new RepositorioTarefaLocalStorage(), id);
+new TelaCadastroTarefa(new RepositorioTarefaLocalStorage(), id);

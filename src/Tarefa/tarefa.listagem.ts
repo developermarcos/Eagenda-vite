@@ -39,7 +39,7 @@ class TarefaListagem implements IPaginaListavel{
     const tableHead = document.createElement('thead');
     const linhaCabecalho = tableHead?.insertRow();
     
-    for (var [key, value] of mapeadorObjeto) {
+    for (var [value] of mapeadorObjeto) {
       let coluna = document.createElement('th');
       coluna.append(value);
       linhaCabecalho.append(coluna);
@@ -60,7 +60,7 @@ class TarefaListagem implements IPaginaListavel{
     
     tarefas.forEach(tarefa => {
       const linhaBody = tablebody?.insertRow();
-      for (var [key, value] of mapeadorObjeto) {
+      for (var [key] of mapeadorObjeto) {
         let valorColuna : any = Object.getOwnPropertyDescriptor(tarefa, key);
         let coluna = linhaBody?.insertCell();
         coluna.append(valorColuna?.value);
