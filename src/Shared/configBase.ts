@@ -15,6 +15,11 @@ class MyHeader extends HTMLElement{
               Tarefas
             </a>
           </li>
+          <li>
+            <a href="../" class="nav-link text-white">
+              Sair
+            </a>
+          </li>
           <li style="display:none;">
             <a href="#" class="nav-link text-white">
               Contatos
@@ -36,26 +41,40 @@ class MyHeader extends HTMLElement{
 }
 function scriptBase(){
 
-  var css_bootstrap = document.createElement('link');
+  const metaCharset = document.createElement('meta') as HTMLMetaElement;
+  metaCharset.setAttribute('charset', 'UFT-8');
+  document.head.appendChild(metaCharset);
+
+  const meta = document.createElement('meta') as HTMLMetaElement;
+  meta.setAttribute('http-equiv', 'X-UA-Compatible');
+  meta.setAttribute('content', 'IE=edge');
+  document.head.appendChild(meta);
+
+  const metaViewport = document.createElement('meta') as HTMLMetaElement;
+  metaViewport.setAttribute('name', 'viewport');
+  metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+  document.head.appendChild(metaViewport);
+
+  const css_bootstrap = document.createElement('link');
   css_bootstrap.setAttribute('href','https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css');
   css_bootstrap.setAttribute('rel','stylesheet');
   css_bootstrap.setAttribute('integrity','sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx');
   css_bootstrap.setAttribute('crossorigin','anonymous');
   document.head.appendChild(css_bootstrap);
 
-  var js_bootstrap = document.createElement('script');
+  const js_bootstrap = document.createElement('script');
   js_bootstrap.setAttribute('defer','');
   js_bootstrap.setAttribute('src','https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js');
   js_bootstrap.setAttribute('integrity','sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa');
   js_bootstrap.setAttribute('crossorigin','anonymous');
   document.head.appendChild(js_bootstrap);
 
-  var font_awesome_css = document.createElement('script');
+  const font_awesome_css = document.createElement('script');
   font_awesome_css.setAttribute('href','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
   font_awesome_css.setAttribute('rel','stylesheet');
   document.head.appendChild(font_awesome_css);
 
-  var font_awesome_js = document.createElement('script');
+  const font_awesome_js = document.createElement('script');
   font_awesome_js.setAttribute('src','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js');
   font_awesome_js.setAttribute('defer','');
   document.head.appendChild(font_awesome_js);

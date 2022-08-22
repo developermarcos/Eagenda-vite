@@ -6,7 +6,7 @@ const root = resolve(__dirname, "src");
 const outDir = resolve(__dirname, "dist");
 
 export default defineConfig({
-  base : "/Egenda-vite/",
+  base : "/Eagenda-vite/",
   plugins : [ghPages()],
   root : root,
   build :{
@@ -14,7 +14,7 @@ export default defineConfig({
     emptyOutDir : true,
     rollupOptions : {
       input : {
-        index: resolve(root, 'index.html'),
+        index: resolve(root, 'login.html'),
         tarefaList: resolve(root, 'tarefa/tarefa.listagem.html'),
         tarefaCreate : resolve(root, 'tarefa/tarefa.cadastrar.html'),
       }

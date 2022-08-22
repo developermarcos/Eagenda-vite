@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Agenda</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <div>
-      <h1 id="titulo">TÍTULO DA PÁGINA</h1>
-      <button id="btn-formatar">Formatar titulo</button>
-    </div>
-    <a href="./tarefa/tarefa.listagem.html">teste</a>
-    <script type="module" src="./index.ts"></script>
-  </body>
+<html lang="pt-br">
+<head>
+  <script defer src="./shared/configBase.ts"></script>
+  <script defer type="module" src="./login.ts"></script>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+  <section class="container">
+    <main class="form">
+      <div class="label-login">
+        <label for="login">Login</label>
+        <input type="text" id="input-login">
+      </div>
+      <div class="label-login">
+        <label for="password">Senha</label>
+        <input type="password" id="input-passwd">
+      </div>
+      <button type="button" id="btn-login">Cadastrar</button>
+    </main>
+  </section>
+</body>
 </html>
