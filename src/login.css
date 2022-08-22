@@ -18,7 +18,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./assets/img/bg-image-login.jpg');
+  background-image: url('/assets/img/bg-image-login.jpg');
   z-index: 0;
   position: relative;
 }
