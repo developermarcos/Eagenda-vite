@@ -14,7 +14,7 @@ export default defineConfig({
     emptyOutDir : true,
     rollupOptions : {
       input : {
-        index: resolve(root, 'login.html'),
+        index: resolve(root, 'index.html'),
         tarefaList: resolve(root, 'tarefa/tarefa.listagem.html'),
         tarefaCreate : resolve(root, 'tarefa/tarefa.cadastrar.html'),
       }
