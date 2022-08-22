@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Agenda</title>
-    
-    <script type="module" crossorigin src="/Eagenda-vite/assets/index.f2cfceb8.js"></script>
-    <link rel="modulepreload" crossorigin href="/Eagenda-vite/assets/modulepreload-polyfill.c7c6310f.js">
-    <link rel="stylesheet" href="/Eagenda-vite/assets/index.15753f16.css">
-  </head>
-  <body>
-    <div>
-      <h1 id="titulo">TÍTULO DA PÁGINA</h1>
-      <button id="btn-formatar">Formatar titulo</button>
-    </div>
-    <a href="./tarefa/tarefa.listagem.html">teste</a>
-    
-  </body>
+<head>
+  <script defer src="./shared/configBase.ts"></script>
+  
+  
+  <script type="module" crossorigin src="/Eagenda-vite/assets/index.26f68e86.js"></script>
+  <link rel="modulepreload" crossorigin href="/Eagenda-vite/assets/modulepreload-polyfill.c7c6310f.js">
+  <link rel="stylesheet" href="/Eagenda-vite/assets/index.5cf6b5fa.css">
+</head>
+<body>
+  <section class="container">
+    <main class="form">
+      <div class="label-login">
+        <label for="login">Login</label>
+        <input type="text" id="input-login">
+      </div>
+      <div class="label-login">
+        <label for="password">Senha</label>
+        <input type="password" id="input-passwd">
+      </div>
+      <button type="button" id="btn-login">Cadastrar</button>
+    </main>
+  </section>
+</body>
 </html>
